@@ -38,7 +38,7 @@ This project is a simple Task Management Application that allows users to create
 3. Create a `.env` file in the root directory and add your MongoDB URI and port number:
 
     ```plaintext
-    MONGO_URI=mongodb+srv://lizzy:lizzy@mongopractice.owdfrgn.mongodb.net/?retryWrites=true&w=majority&appName=MongoPractice
+    MONGO_URI=
     PORT=3000
     ```
 
