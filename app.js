@@ -5,7 +5,7 @@ const path = require("path");
 const Task = require("./modules/tasks")
 
 require('dotenv').config();
-const port = process.env.port
+const port = process.env.PORT || 3000
 const conn = require("./db/conn")
 conn();
 
