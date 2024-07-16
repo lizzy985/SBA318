@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <h1>Task Management</h1>
+    <a href="/tasks/add"> Add New Task</a>
+    <ul>
+        <% tasks.forEach(task => { %>
+            <li>
+                <h2><%= task.title %></h2>
+                <p><%= task.description %></p>
+                <p>Status: <%= task.completed ? 'Completed': 'Pending' %></p>
+                <div id="container2">
+                    <a href="/tasks/edit/<%= task._id %>"> Edit </a>
+                    <form action="/tasks/delete/<%= task._id %>?_method=DELETE" method="POST">
+                        <button type="submit">Delete</button>
+                    </form>
+                </div>
+                
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
