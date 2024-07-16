@@ -8,8 +8,9 @@
 </head>
 <body>
     <h1>Task Management</h1>
-    <a href="/tasks/add"> Add New Task</a>
+    
     <ul>
+        <a href="/tasks/add"> Add New Task</a>
         <% tasks.forEach(task => { %>
             <li>
                 <h2><%= task.title %></h2>
